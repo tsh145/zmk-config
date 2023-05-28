@@ -11,4 +11,7 @@ config PWM
 config LED_PWM
     default y
 
+config I2C
+	default y
+
 endif
