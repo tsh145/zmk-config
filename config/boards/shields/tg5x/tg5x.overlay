@@ -45,9 +45,25 @@ RC(3,0) RC(3,1) RC(3,2)                 RC(3,5)                         RC(7,2) 
         >;
     };
 
+        backlight: pwmleds {
+        compatible = "pwm-leds";
+        label = "Backlight LEDs";
+        pwm_led_0 {
+            pwms = <&pwm0 8 10000 PWM_POLARITY_NORMAL>;
+            label = "Backlight LED 0";
+        };
+    };
+
+    vbatt: vbatt {
+        compatible = "zmk,battery-nrf-vddh";
+        label = "VBATT";
+    };
+
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
+        zmk,backlight = &backlight;
+        zmk,battery = &vbatt;
     };
 };
 
