@@ -15,13 +15,13 @@
         };
     };
 
-    chosen {
-        zmk,backlight = &backlight;
-      zmk,battery = &vbatt;
-    };
-
-     vbatt: vbatt {
+    vbatt: vbatt {
         compatible = "zmk,battery-nrf-vddh";
         label = "VBATT";
+    };
+
+    chosen {
+        zmk,backlight = &backlight;
+        zmk,battery = &vbatt;
     };
 };
