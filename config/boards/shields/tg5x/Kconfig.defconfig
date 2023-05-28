@@ -11,5 +11,7 @@ config PWM
 config LED_PWM
     default y
 
+CONFIG_PINCTRL
+    default y
 
 endif
