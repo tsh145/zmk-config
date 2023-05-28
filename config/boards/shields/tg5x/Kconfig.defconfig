@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT
+
+if SHIELD_TG5X
+
+config ZMK_KEYBOARD_NAME
+    default "TG5x"
+
+endif

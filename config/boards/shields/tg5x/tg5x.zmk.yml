@@ -1,0 +1,8 @@
+file_format: "1"
+id: tg5x
+name: TG5x
+type: shield
+url: https://github.com/
+requires: [pro_micro]
+features:
+  - keys

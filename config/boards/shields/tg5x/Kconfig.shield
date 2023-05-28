@@ -1,0 +1,4 @@
+# SPDX-License-Identifier: MIT
+
+config SHIELD_TG5X
+    def_bool $(shields_list_contains,tg5x)
