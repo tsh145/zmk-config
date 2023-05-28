@@ -1,4 +1,5 @@
-pwm0_default: pwm0_default {
+&pinctrl {
+	pwm0_default: pwm0_default {
 		group1 {
 			psels = <NRF_PSEL(PWM_OUT0, 0, 8)>;
 		};
@@ -9,3 +10,4 @@ pwm0_default: pwm0_default {
 			low-power-enable;
 		};
 	};
+};
