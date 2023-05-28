@@ -1,19 +1,6 @@
 
-&pwm0 {
-    status = "okay";
-    ch0-pin = <8>;
-    /* ch0-inverted; */
-};
 
 / {
-    backlight: pwmleds {
-        compatible = "pwm-leds";
-        label = "Backlight LEDs";
-        pwm_led_0 {
-            pwms = <&pwm0 8>;
-            label = "Backlight LED 0";
-        };
-    };
 
     vbatt: vbatt {
         compatible = "zmk,battery-nrf-vddh";
@@ -21,7 +8,6 @@
     };
 
     chosen {
-        zmk,backlight = &backlight;
         zmk,battery = &vbatt;
     };
 };
