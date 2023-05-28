@@ -5,4 +5,10 @@ if SHIELD_TG5X
 config ZMK_KEYBOARD_NAME
     default "TG5x"
 
+config PWM
+    default y
+
+config LED_PWM
+    default y
+
 endif
