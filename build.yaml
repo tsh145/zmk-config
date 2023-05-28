@@ -12,5 +12,6 @@
 #     shield: reviung41
 #
 ---
-board: ["nice_nano_v2"]
-shield: ["tg5x"]
+include:
+  - board: nice_nano_v2
+    shield: tg5x
